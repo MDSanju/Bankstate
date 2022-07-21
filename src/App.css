@@ -1,38 +1,71 @@
+* {
+    background-image: url("https://i.ibb.co/D7JMxbX/afaddcb9d7dfaaf5bff7ef04101935814665ac16.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    background-attachment: fixed;
+    text-align: center;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clock {
+    position: relative;
+    margin: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.clock section p {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.clock section small {
+    color: silver;
+    text-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.construction {
+    width: 30%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .construction {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .construction {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .construction {
+        width: 86%;
+    }
 }
